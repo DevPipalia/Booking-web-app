@@ -1,10 +1,40 @@
 .header-item{
-    padding-left: 7.3rem;
+   padding-left: 7.3rem;
     padding-right: 1rem;
 }
 
+.header-items span:hover{
+    text-transform: uppercase;
+}
+
 .header-items{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    
+}
+
+.header-search{
+    display: flex;
+    gap: 7.5rem;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+
+
+.header-search-item span,input{
+    padding-left: 20px;
+}
+
+.header-search-item input{
+    border: none;
+    outline: none;
+}
+
+.date-input{
+    position: absolute;
+    top: 250px;
+    left: 370px;
 }
