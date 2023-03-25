@@ -22,7 +22,9 @@
     margin-top: 2rem;
 }
 
-
+.date-item{
+    cursor: pointer;
+}
 
 .header-search-item span,input{
     padding-left: 20px;
