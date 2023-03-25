@@ -18,7 +18,7 @@ import format from "date-fns/format";
 
 function Header(){
     const [text] = useTypewriter({
-        words: ['my therapy', 'escape from reality', 'discovering myself','here'],
+        words: ['my therapy', 'escape from reality', 'discovering myself','HERE'],
         loop:10,
         typeSpeed:40,
         deleteSpeed:40

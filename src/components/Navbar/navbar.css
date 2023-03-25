@@ -1,10 +1,11 @@
 
 
 .navbar{
-    /* background-color: aquamarine; */
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
+    margin-bottom: 20px;
+
 }
 
 .nav-items{
