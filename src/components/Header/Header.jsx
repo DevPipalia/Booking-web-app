@@ -57,10 +57,10 @@ function Header(){
                 </div>
             </div>
            <div> 
-        <span>Travel is </span>
-        <span>{text}</span>
+        <span className="header-text-1">Travel is </span>
+        <span className="header-typewriter">{text}</span>
         <Cursor cursorStyle="🤗"  cursorBlinking={false}/>
-        <p>Hub for best prices, Medium of best experiences </p>
+        <p className="header-text-2">Hub for best prices, Medium of best experiences </p>
         </div>
         </div>
         <div className="header-search">
