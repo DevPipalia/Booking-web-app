@@ -65,11 +65,11 @@ function Header(){
         </div>
         <div className="header-search">
          <div className="header-search-item">
-            <FontAwesomeIcon icon={faMountain} />
+            <FontAwesomeIcon className="icon" icon={faMountain} />
              <input type="text" placeholder="Where are you travelling" className="header-search-input"/>
             </div>
             <div className="header-search-item date-item" onClick={()=>setOpendate(!openDate)}>
-            <FontAwesomeIcon icon={faCalendar} />
+            <FontAwesomeIcon className="icon" icon={faCalendar} />
              <span>{`${format(date[0].startDate,"dd/MM/yy")} to ${format(date[0].endDate,"dd/MM/yy")}`}</span>
              {openDate&&<DateRange
                 editableDateInputs={true}
@@ -80,7 +80,7 @@ function Header(){
                 />}
              </div>
              <div className="header-search-item">
-            <FontAwesomeIcon icon={faPerson} />
+            <FontAwesomeIcon className="icon" icon={faPerson} />
              <span>2 Adults 2 Children 1 room</span>
              </div>
              <div className="header-search-item">

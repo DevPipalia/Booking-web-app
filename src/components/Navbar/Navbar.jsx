@@ -6,8 +6,9 @@ import { useState } from "react"
 
 
 function NavigationBar(){
-
+    
     const[showMediaIcons,setShowMediaIcons]=useState(false);
+    const isMobile=window.innerWidth<998;
     return(
         <>
         <div className="navbar">
