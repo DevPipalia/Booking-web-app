@@ -100,6 +100,8 @@ body{
 
 
 
+
+
 .header-search{
     display: flex;
     gap: 7.5rem;
@@ -143,4 +145,24 @@ body{
     position: absolute;
     top: 250px;
     left: 370px;
+}
+
+
+.options{
+    position: absolute;
+    top: 22rem;
+    right: 11.1rem;
+    background-color: whitesmoke;
+    padding: 0.9rem;
+    display: flex;
+}
+
+.option-item span{
+    font-weight: 900;
+    color: black;
+}
+
+.option-button-counter{
+    background-color:aquamarine;
+    border-radius: 50px;
 }

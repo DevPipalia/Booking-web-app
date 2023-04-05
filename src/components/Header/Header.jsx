@@ -31,6 +31,21 @@ function Header(){
         }
       ]);
       const [openDate,setOpendate]=useState(false)
+      const[openOptions,setOpenOptions]=useState(false)
+      const [options,setOptions]=useState({
+        adult:1,
+        children:0,
+        room:1
+      })
+
+      const handleOption=(name,operation)=>{
+        setOptions(prev=>{
+          return{
+            ...prev,
+             [name]:operation ==="i"?options[name] +  1: options[name] -1,
+          };
+        })
+      }
     return(
         <>
         <div className="header">
@@ -81,8 +96,29 @@ function Header(){
              </div>
              <div className="header-search-item">
             <FontAwesomeIcon className="icon" icon={faPerson} />
-             <span>2 Adults 2 Children 1 room</span>
+             <span>{`${options.adult}adult~ ${options.children}children~  ${options.room}room(s)`}</span>
+             <div className="options">
+               <div className="option-item">
+                  <span>Adults</span>
+                  <span className="option-counter-number">1</span>
+                  <button className="option-button-counter" onClick={handleOption("adult","decrease")}>-</button>
+                  <button className="option-button-counter" onClick={handleOption("adult","increase")}>+</button>
+               </div>
+               <div className="option-item">
+                  <span>Children</span>
+                  <span className="option-counter-number" >0</span>
+                  <button className="option-button-counter" onClick={handleOption("children","decrease")}>-</button>
+                  
+                  <button className="option-button-counter" onClick={handleOption("children","decrease")}>+</button>
+               </div>
+               <div className="option-item">
+                  <span>Rooms</span>
+                  <span className="option-counter-number">1</span>
+                  <button className="option-button-counter" onClick={handleOption("room","decrease")}>-</button>
+                  <button className="option-button-counter" onClick={handleOption("room","increase")}>+</button>
+               </div>
              </div>
+             </div> 
              <div className="header-search-item">
              <button>Search</button>
              </div>
