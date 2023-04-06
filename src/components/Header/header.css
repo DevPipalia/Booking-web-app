@@ -157,6 +157,11 @@ body{
     display: flex;
 }
 
+.open-options{
+    cursor: pointer;
+}
+
+
 .option-item span{
     font-weight: 900;
     color: black;
