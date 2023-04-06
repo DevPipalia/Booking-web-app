@@ -38,14 +38,6 @@ function Header(){
         room:1
       })
 
-      const handleOption=(name,operation)=>{
-        setOptions(prev=>{
-          return{
-            ...prev,
-             [name]:operation ==="i"?options[name] +  1: options[name] -1,
-          };
-        })
-      }
     return(
         <>
         <div className="header">
@@ -101,21 +93,21 @@ function Header(){
                <div className="option-item">
                   <span>Adults</span>
                   <span className="option-counter-number">1</span>
-                  <button className="option-button-counter" onClick={handleOption("adult","decrease")}>-</button>
-                  <button className="option-button-counter" onClick={handleOption("adult","increase")}>+</button>
+                  <button className="option-button-counter" >-</button>
+                  <button className="option-button-counter" >+</button>
                </div>
                <div className="option-item">
                   <span>Children</span>
                   <span className="option-counter-number" >0</span>
-                  <button className="option-button-counter" onClick={handleOption("children","decrease")}>-</button>
+                  <button className="option-button-counter" >-</button>
                   
-                  <button className="option-button-counter" onClick={handleOption("children","decrease")}>+</button>
+                  <button className="option-button-counter" >+</button>
                </div>
                <div className="option-item">
                   <span>Rooms</span>
                   <span className="option-counter-number">1</span>
-                  <button className="option-button-counter" onClick={handleOption("room","decrease")}>-</button>
-                  <button className="option-button-counter" onClick={handleOption("room","increase")}>+</button>
+                  <button className="option-button-counter" >-</button>
+                  <button className="option-button-counter" >+</button>
                </div>
              </div>
              </div> 
