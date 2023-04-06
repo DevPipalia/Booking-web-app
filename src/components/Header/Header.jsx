@@ -16,7 +16,7 @@ import format from "date-fns/format";
 
 
 
-function Header(){
+function Header({type}){
     const [text] = useTypewriter({
         words: ['my therapy', 'escape from reality', 'discovering myself','HERE'],
         loop:10,
@@ -81,7 +81,9 @@ function Header(){
         <p className="header-text-2">Hub for best prices, Medium of best experiences </p>
         </div>
         </div>
-        <div className="header-search">
+        { type!=="list" &&
+        <>
+          <div className="header-search">
          <div className="header-search-item">
             <FontAwesomeIcon className="icon" icon={faMountain} />
              <input type="text" placeholder="Where are you travelling" className="header-search-input"/>
@@ -127,7 +129,7 @@ function Header(){
              <button>Search</button>
              </div>
 
-        </div>
+          </div></>}
 
         </>
     )
