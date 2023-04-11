@@ -1,0 +1,34 @@
+.featured{
+    margin: 2rem;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-img{
+    width: 20rem;
+    height: 16rem;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.featured-title{
+    position: absolute;
+    color: white;
+    font-weight:bolder
+}
+
+.f1{
+    left: 65px;
+    top: 500px;
+}
+
+.f2{
+    left: 500px;
+    top: 500px;
+}
+
+.f3{
+    left: 935px;
+    top: 500px;
+}
